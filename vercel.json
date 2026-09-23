@@ -1,0 +1,23 @@
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+      },
+      "continue": true
+    },
+    { "handle": "filesystem" },
+    { "src": "/apps/cosmoplay/?", "dest": "/apps/cosmoplay/index.html" },
+    { "src": "/apps/bicoudo/?", "dest": "/apps/bicoudo/index.html" },
+    { "src": "/apps/club-dynasty/?", "dest": "/apps/club-dynasty/index.html" },
+    { "src": "/support/cosmoplay/?", "dest": "/support/cosmoplay/index.html" },
+    { "src": "/privacy/cosmoplay/?", "dest": "/privacy/cosmoplay/index.html" },
+    { "src": "/support/bicoudo/?", "dest": "/support/bicoudo/index.html" },
+    { "src": "/privacy/bicoudo/?", "dest": "/privacy/bicoudo/index.html" }
+    ,{ "src": "/support/club-dynasty/?", "dest": "/support/club-dynasty/index.html" },
+    { "src": "/privacy/club-dynasty/?", "dest": "/privacy/club-dynasty/index.html" }
+  ]
+}
